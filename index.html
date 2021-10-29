@@ -11,21 +11,27 @@
 
 <body>
     <header>
-        <div>
+        <nav>
             <img src="assets/img/logo.svg" alt="logo" id="logo">
             <div>
                 <p id="logoHeadline">TheDesignProject</p>
                 <p class="pType1">by a WebDesigner</p>
             </div>
-        </div>
-        <div>
-            <h1>How to become</h1>
-            <h1>a better designer?</h1>
-            <p class="pType2" id="headerText">A challenge to improve your product design skills by solving problems in
-                your daily life.
-            </p>
-            <a id="headerScroller" href="#firstArticle">SCROLL TO SEE MORE —</a>
-        </div>
+        </nav>
+        <section class="firstChapter">
+            <div>
+                <h1>How to become</h1>
+                <h1>a better designer?</h1>
+                <p class="pType2" id="headerText">A challenge to improve your product design skills by solving problems
+                    in
+                    your daily life.
+                </p>
+                <a id="headerScroller" href="#firstArticle">SCROLL TO SEE MORE —</a>
+            </div>
+            <div>
+                <img src="assets/img/ilustracion_people.png" alt="man">
+            </div>
+        </section>
     </header>
     <!-- Image Section -->
     <section>
@@ -52,19 +58,20 @@
                 <article>
                     <img src="assets/img/title04.svg" alt="icon4">
                     <div>
-                    <h3>Start with asking</h3>
-                    <p class="pType1">why You will start seeing things differently and coming up with more effective
-                        ways of
-                        achieving goals.</p>
+                        <h3>Start with asking</h3>
+                        <p class="pType1">why You will start seeing things differently and coming up with more effective
+                            ways of
+                            achieving goals.</p>
                     </div>
                 </article>
                 <article>
                     <img src="assets/img/title02.svg" alt="icon2">
                     <div>
-                    <h3 id="challengeHeadline2">Your ideas will have more value</h3>
-                    <p class="pType1">By looking at problems from a different perspective, your ideas will be fresher
-                        and
-                        more valuable.</p>
+                        <h3 id="challengeHeadline2">Your ideas will have more value</h3>
+                        <p class="pType1">By looking at problems from a different perspective, your ideas will be
+                            fresher
+                            and
+                            more valuable.</p>
                     </div>
                 </article>
             </div>
@@ -72,19 +79,21 @@
                 <article>
                     <img src="assets/img/title01.svg" alt="icon1">
                     <div>
-                    <h3 id="challengeHeadline3">Design solutions with love</h3>
-                    <p class="pType1">Only when you experience a problem yourself do you understand the frustration of
-                        the
-                        users and resolve to end it.</p>
+                        <h3 id="challengeHeadline3">Design solutions with love</h3>
+                        <p class="pType1">Only when you experience a problem yourself do you understand the frustration
+                            of
+                            the
+                            users and resolve to end it.</p>
                     </div>
                 </article>
                 <article>
                     <img src="assets/img/title03.svg" alt="icon3">
                     <div>
-                    <h3 id="challengeHeadline4">Share and show your work</h3>
-                    <p class="pType1">As designers, we are often afraid of showing work that’s not finished or doesn’t
-                        look
-                        perfect. You will learn to accept feedback and learn from it.</p>
+                        <h3 id="challengeHeadline4">Share and show your work</h3>
+                        <p class="pType1">As designers, we are often afraid of showing work that’s not finished or
+                            doesn’t
+                            look
+                            perfect. You will learn to accept feedback and learn from it.</p>
                     </div>
                 </article>
             </div>
@@ -144,17 +153,27 @@
         </section>
         <!-- Third Main Article -->
         <article class="secondChapter">
-            <h2>Do you like this challenge?</h2>
-            <p class="pType2">Subscribe to be the first to hear about updates, tips and recommendations!</p>
-            <input type="email" name="email" id="email" placeholder="Write your Email here">
-            <input type="submit" value="subcribe">
+            <div id="afterSubscribtion">
+                <h2>You sucessfully subscribed with your Email:</h2>
+                <p id="subscribedEmail"></p>
+                <h3>Thanks for your subscibtion!</h3>
+                <button onclick="backToMainPage()">Return</button>
+            </div>
+            <div id="beforeSubscribtion">
+                <h2>Do you like this challenge?</h2>
+                <p class="pType2">Subscribe to be the first to hear about updates, tips and recommendations!</p>
+                <form action="" onsubmit="return false">
+                    <input type="email" name="email" id="email" placeholder="Write your Email here">
+                    <input type="submit" value="subscribe" onclick="subscribe()">
+                </form>
+            </div>
         </article>
     </main>
     <footer>
         <p class="pType1">Created with love by a Webdesigner.</p>
         <img src="assets/img/love.png" alt="heart">
     </footer>
-
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
