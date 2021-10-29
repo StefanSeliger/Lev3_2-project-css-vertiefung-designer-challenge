@@ -1,0 +1,231 @@
+/* === General Styles === */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Fonts & Colors 
+font-family: 'Roboto', sans-serif;
+Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.pType1 {
+    font-size: 1.5rem; 
+    line-height: 30px; 
+}
+
+.pType2 {
+    font-size: 2rem; 
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    word-break: keep-all;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2vh; 
+}
+
+/* === Header Styles === */
+header {
+    background: url("../img/ilustracion1.png"); 
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+header div:first-child {
+    display: flex; 
+    margin: 2vh 0 0 2vw; 
+}
+
+#logo {
+    width: 45px; 
+    margin-right: 10px; 
+}
+
+#logoHeadline {
+    font-weight: bold;
+    font-size: 2rem; 
+}
+
+header div:nth-of-type(2) {
+    width: 55%; 
+    margin: 35vh 0 10vh 8vw; 
+}
+
+header div:nth-of-type(2) h1 {
+    font-size: 5rem;
+}
+
+#headerText {
+    margin: 2vh 0 15vh 0; 
+}
+
+#headerScroller {
+    text-decoration: none;
+    color: #ff3571; 
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* === Image Section === */
+#coverImg {
+    width: 100vw; 
+    margin: 10vh 0 10vh 0; 
+}
+
+/* === Main Styles === */
+
+/* == alg. Styles == */
+.firstChapter {
+    width: 80%;
+    margin: 20vh 10vw; 
+}
+
+/* == First Main Article == */
+#firstArticle {
+    display: flex; 
+    align-items: flex-start;
+} 
+
+#firstArticle h2 {
+    width: 23vw; 
+}
+
+#ideaIcon {
+    height: 32px; 
+}
+
+#firstArticle p {
+    width: 45vw; 
+    margin-left: auto; 
+}
+
+/* == First Main Section == */
+main section:nth-of-type(1) {
+    width: 41vw; 
+}
+
+/* == Second Main Section == */
+main section:nth-of-type(2) > div {
+    display: flex; 
+    justify-content: space-between;
+}
+
+main section:nth-of-type(2) article {
+    width: 30vw; 
+    margin-top: 8vh;
+    display: flex; 
+    align-items: flex-start; 
+}
+
+main section:nth-of-type(2) article img {
+    width: 25px; 
+    margin-right: 2vw; 
+}
+
+/* == Second Main Article == */
+.secondChapter {
+    text-align: center;
+    width: 60%; 
+    margin: 20vh auto; 
+}
+
+.secondChapter h2 {
+    margin-bottom: 4vh; 
+}
+
+/* == Third Main Section == */
+main section:nth-of-type(3) div {
+    display: flex; 
+    justify-content: center; 
+    margin: 10vh 10vw; 
+}
+
+main section:nth-of-type(3) div:nth-of-type(odd) > img {
+    order: 0;  
+    margin-right: 7vw; 
+}
+
+main section:nth-of-type(3) div:nth-of-type(even) > img {
+    order: 1;  
+    margin-left: 4vw; 
+}
+
+.number {
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #dddddd; 
+    margin-bottom: 3vh;
+}
+
+.stepIcon {
+    width: 30px; 
+    margin-bottom: 2vh;
+}
+
+main section:nth-of-type(3) div > img {
+    width: 35vw;  
+}
+
+main section:nth-of-type(3) div > article {
+    width: 45vw;  
+}
+
+/* == Third Main Article == */
+main > article:nth-of-type(3) {
+    text-align: center;
+}
+
+main > article:nth-of-type(3) h2 {
+    margin-bottom: 7vh; 
+}
+
+main > article:nth-of-type(3) input {
+    display: block; 
+    padding: 2% 10%; 
+    font-size: 2rem;
+    border: none; 
+    text-align: center; 
+}
+
+main > article:nth-of-type(3) input:nth-of-type(1) {
+    width: 70%; 
+    box-shadow: 0px 0px 30px 5px #dddddd;
+    margin: 7vh auto; 
+}
+
+main > article:nth-of-type(3) input:nth-of-type(2) {
+    width: 30%; 
+    background: #ff3571; 
+    color: white; 
+    margin: 0 auto;
+}
+
+main > article:nth-of-type(3) input:nth-of-type(2):hover {
+    background: linear-gradient(to right, #ff3571, #3C30FF);
+}
+
+/* === Footer === */
+footer {
+    padding: 2vh 10vw; 
+    display: flex;
+}
+
+footer img {
+    height: 25px; 
+}
